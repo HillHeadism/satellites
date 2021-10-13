@@ -26,10 +26,10 @@
 <body>
   <div id="map"></div>
   <script>
-      var map = L.map('map').setView([22.35370131206552, 114.13651066276464], 14.0);
-      L.tileLayer('./{z}/{x}/{y}.jpg', {
-        minZoom: 9,
-        maxZoom: 16,
+      var map = L.map('map').setView([22.35370131206552, 114.13651066276464], 12.0);
+      L.tileLayer('https://cdn.jsdelivr.net/gh/HillHeadism/satellites@main/{z}/{x}/{y}.jpg', {
+        minZoom: 11,
+        maxZoom: 15,
         tms: false,
         attribution: '<u target="_blank">&copy; The Government of the Hong Kong SAR</u><div style="width:28px;height:28px;display:inline-flex;background:url(https://api.hkmapservice.gov.hk/mapapi/landsdlogo.jpg);background-size:28px;"></div>'
       }).addTo(map);
